@@ -17,6 +17,7 @@
     />
 
     <title>Cricket Quiz</title>
+    <link rel="icon" type="image/jpeg" href="assets/images/favicon.ico">
     <link rel="stylesheet" href="assets/css/style.css" />
   </head>
 
@@ -26,15 +27,17 @@
       Cricket Quize
       <img class="pic" src="assets/images/logo.jpeg" alt="logo" />
     </h1>
+
+
     <div class="user-container active" id="usernamecontainer">
+        <form>
       <label class="username" for="usernameInput">Choose your username:</label>
-      <input
-        type="text"
-        id="usernameInput"
-        placeholder="Input your username"
+      <input type="text" id="usernameInput" placeholder="Input your username"
       /><br />
-      <button onclick="startQuiz()">Start Quiz</button>
+      <button onclick="startQuiz()">Start Quiz</button></form>
     </div>
+
+
     <div class="container" class="hidden">
       <div class="question" id="question1">
         <h2>Question 1:</h2>
