@@ -1,5 +1,19 @@
 let activeQuestion = 1;
+var username = "";
 const userResponse = {};
+
+function startQuiz() {
+    var usernameInput = document.getElementById('usernameInput');
+    var username = usernameInput.value;
+
+    // Display welcome message in a div
+    var welcomeMessage = document.getElementById('usernamecontainer');
+    welcomeMessage.innerHTML = "<p>Welcome to the quiz, " + username + ".</p>";
+
+    // Activate the first question
+    var nextQuestionElement = document.getElementById('question1');
+    nextQuestionElement.classList.add('active');
+}
 
 function nextQuestion() {
     storeAnswer();
@@ -78,4 +92,4 @@ function calculateScore() {
 }
 
 // Show the first question initially
-document.getElementById('question1').classList.add('active');
+document.getElementById('question1').classList.add('usernamecontainer');
