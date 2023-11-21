@@ -51,7 +51,7 @@ input {
 
  .container {
     text-align: center;
-    width: 450px;
+    width: 370px;
      padding: 20px;
      margin: auto ;
     display: flex;
@@ -84,15 +84,4 @@ label {
      border-radius: 5px;
  }
 
- /* Media query for smaller screens  */
- @media screen and (min-width: 420px) {
-    .container{
-        width: 400px;
-    }
- }
- /* Media query for smartwatches  */
- @media screen and (min-width: 320px) {
-    .container{
-        width: 270px;
-    }
- }
+ 

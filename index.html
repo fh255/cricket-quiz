@@ -1,57 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8" >
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
     <!--Font awesome-->
     <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
       integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
-      crossorigin="anonymous"
-    />
+      crossorigin="anonymous">
     <link
       href="https://fonts.googleapis.com/css?family=Raleway%7CRighteous"
-      rel="stylesheet"
-    />
+      rel="stylesheet">
 
     <title>Cricket Quiz</title>
     <link rel="icon" type="image/jpeg" href="assets/images/favicon.ico">
-    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/style.css" >
   </head>
 
   <body>
     <!--logo-->
     <h1 class="logo">
       Cricket Quize
-      <img class="pic" src="assets/images/logo.jpeg" alt="logo" />
+      <img class="pic" src="assets/images/logo.jpeg" alt="logo">
     </h1>
 
 
     <div class="user-container active" id="usernamecontainer">
         <form>
       <label class="username" for="usernameInput">Choose your username:</label>
-      <input type="text" id="usernameInput" placeholder="Input your username"
-      /><br />
+      <input type="text" id="usernameInput" placeholder="Input your username"><br >
       <button onclick="startQuiz()">Start Quiz</button></form>
     </div>
 
 
-    <div class="container" class="hidden">
+    <div class="container hidden" >
       <div class="question" id="question1">
         <h2>Question 1:</h2>
         <p>Who won the first ever Cricket World Cup in 1975?</p>
 
-        <label><input type="radio" name="q1" value="england" /> England</label>
-        <br />
-        <label><input type="radio" name="q1" value="india" /> India</label
-        ><br />
+        <label><input type="radio" name="q1" value="england" > England</label>
+        
+        <label><input type="radio" name="q1" value="india" > India</label
+        >
 
         <label
-          ><input type="radio" name="q1" value="west-indies" /> West
+          ><input type="radio" name="q1" value="west-indies" > West
           Indies</label
-        ><br />
+        >
 
         <button onclick="nextQuestion()">Next</button>
       </div>
@@ -60,9 +57,9 @@
         <h2>Question 2:</h2>
         <p>How many ways are there of getting out?</p>
 
-        <label><input type="radio" name="q2" value="9" /> 9</label>
-        <label><input type="radio" name="q2" value="10" /> 10</label>
-        <label><input type="radio" name="q2" value="4" /> 4</label>
+        <label><input type="radio" name="q2" value="9" > 9</label>
+        <label><input type="radio" name="q2" value="10" > 10</label>
+        <label><input type="radio" name="q2" value="4" > 4</label>
 
         <button onclick="previousQuestion()">Previous</button>
         <button onclick="nextQuestion()">Next</button>
@@ -72,12 +69,12 @@
         <h2>Question 3:</h2>
         <p>Who did England beat in the final of the 2019 Cricket World Cup?</p>
 
-        <label><input type="radio" name="q3" value="india" /> India</label>
+        <label><input type="radio" name="q3" value="india" > India</label>
         <label
-          ><input type="radio" name="q3" value="newzeland" /> Newzeland</label
+          ><input type="radio" name="q3" value="newzeland" > Newzeland</label
         >
         <label
-          ><input type="radio" name="q3" value="scotland" /> Scotland</label
+          ><input type="radio" name="q3" value="scotland" > Scotland</label
         >
 
         <button onclick="previousQuestion()">Previous</button>
