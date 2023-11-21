@@ -1,6 +1,6 @@
 <h1 align="center" > Cricket Quiz </h1>
 
-[View the project here] (<https://fh255.github.io/cricket-quiz/>)
+[View the project here](<https://fh255.github.io/cricket-quiz/>)
 
 This is a online quiz about Cricket. In this quiz, user  ask to set a Username to start the game. The Quiz contains 3 question about cricket.  The feed back page will appear at the last of the question which mentioned user"s correct and incorrect answer. 
 [Mockup]<img width="961" alt="mock up" src="https://github.com/fh255/cricket-quiz/assets/34744096/1fec4429-cc77-46f6-bdc2-6b80c779593a">
@@ -71,28 +71,21 @@ This is a online quiz about Cricket. In this quiz, user  ask to set a Username t
 <img width="1124" alt="accessibility" src="https://github.com/fh255/cricket-quiz/assets/34744096/6a96ef85-270a-4a07-8792-5d0ba57a3d2a">
 
 ### Frameworks & Libraries 
-- Google Fonts: used to import Arial and Times New Roman.
-- Git : used to control the Gitpod terminal to commit to Git and Push to GitHub.
-- GitHub : used to control the Gitpod terminal to commit to Git and Push to GitHub.
+- [Google Fonts](https://fonts.google.com/): used to import Arial and Times New Roman.
+
+- [GitHub](https://github.com/dashboard) : used to control the Gitpod terminal to commit to Git and Push to GitHub.
 
 ## Deployment
 - go to GitHub the select setting fromright side navigation
 - select Pages from left side
 - From the source section drop-down menu, select the Main Branch.
 - Once the Main branch has been selected, the page will be automatically refreshed with a detailed ribbon display to indicate the successful deployment
-The page link (https://fh255.github.io/cricket-quiz/)
+[The page link](https://fh255.github.io/cricket-quiz/)
 
 ## Credits
 - The CSS and JS codes are learned from various Website like W3Scool, MDN Web Docs, tutorialspoint .
-* The quiz questions and model were inspired by Ultimate Quiz Questions website.
+- The quiz questions and model were inspired by Ultimate Quiz Questions website.
+- HTML,CSS and JS codes were also written in [HTML editor](https://html-css-js.com/)
 
 ## Acknowledgments
 Thanks to my mentor for his frequent help and feedback. Also thanks to the tutor Aassistance which is easily reachable any working hours.
-
-
-
-
-
-
-
-
