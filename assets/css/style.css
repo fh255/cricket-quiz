@@ -88,3 +88,6 @@ label {
  @media screen and (min-width: 420px) {
     width: 400px;
  }
+ @media screen and (min-width: 320px) {
+     width: 280px;
+ }
