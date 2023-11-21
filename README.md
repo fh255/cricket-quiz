@@ -10,8 +10,8 @@ This is a online quiz about Cricket. In this quiz, user  ask to set a Username t
 * Design
 * Features
 * Technologies
-* Testing
 * Deployment
+* Testing
 * Credit
 
 ## User Story
@@ -58,6 +58,29 @@ This is a online quiz about Cricket. In this quiz, user  ask to set a Username t
 - HTML 
 - CSS
 - JavaScript (JS)
+* Accessibility
+
+### Frameworks & Libraries 
+- Google Fonts: used to import Arial and Times New Roman.
+- Git : used to control the Gitpod terminal to commit to Git and Push to GitHub.
+- GitHub : used to control the Gitpod terminal to commit to Git and Push to GitHub.
+
+## Deployment
+- go to GitHub the select setting fromright side navigation
+- select Pages from left side
+- From the source section drop-down menu, select the Main Branch.
+- Once the Main branch has been selected, the page will be automatically refreshed with a detailed ribbon display to indicate the successful deployment
+The page link (https://fh255.github.io/cricket-quiz/)
+
+## Credits
+- The CSS and JS codes are learned from various Website like W3Scool, MDN Web Docs, tutorialspoint .
+* The quiz questions and model were inspired by Ultimate Quiz Questions website.
+
+## Acknowledgments
+Thanks to my mentor for his frequent help and feedback. Also thanks to the tutor Aassistance which is easily reachable any working hours.
+
+
+
 
 
 
