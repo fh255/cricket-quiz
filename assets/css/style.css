@@ -84,10 +84,15 @@ label {
      border-radius: 5px;
  }
 
- 
+ /* Media query for smaller screens  */
  @media screen and (min-width: 420px) {
-    width: 400px;
+    .container{
+        width: 400px;
+    }
  }
+ /* Media query for smartwatches  */
  @media screen and (min-width: 320px) {
-     width: 280px;
+    .container{
+        width: 270px;
+    }
  }
