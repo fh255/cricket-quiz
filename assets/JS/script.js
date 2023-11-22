@@ -1,49 +1,61 @@
+// Vriable to hold the questions and user's Answer 
+
 let activeQuestion = 1;
 var username = "";
 const userResponse = {};
 
+// Define the start quiz function
+
 function startQuiz() {
-    var usernameInput = document.getElementById('usernameInput');
-    var username = usernameInput.value;
+    let usernameInput = document.getElementById('usernameInput');
+    let username = usernameInput.value;
 
     // Display welcome message in a div
-    var welcomeMessage = document.getElementById('usernamecontainer');
+
+    let welcomeMessage = document.getElementById('usernamecontainer');
     welcomeMessage.innerHTML = "<p>Welcome to the quiz, " + username + ".</p>";
 
-    // Activate the first question
-    var nextQuestionElement = document.getElementById('question1');
+    // Activ the 1st question
+    let nextQuestionElement = document.getElementById('question1');
     nextQuestionElement.classList.add('active');
 }
+//Load the next question and store the data
 
 function nextQuestion() {
     storeAnswer();
     const activeQuestionElement = document.getElementById(`question${activeQuestion}`);
     activeQuestionElement.classList.remove('active');
 
+// Prevent going beyond the last question
+
     activeQuestion++;
     if (activeQuestion > 3) {
-        activeQuestion = 3; // Prevent going beyond the last question
+        activeQuestion = 3; 
     }
 
     const nextQuestionElement = document.getElementById(`question${activeQuestion}`);
     nextQuestionElement.classList.add('active');
     getAnswer();
 }
+//Load the previous question and store the data
 
 function previousQuestion() {
     storeAnswer();
     const activeQuestionElement = document.getElementById(`question${activeQuestion}`);
     activeQuestionElement.classList.remove('active');
 
+    // Prevent going before the first question
+
     activeQuestion--;
     if (activeQuestion < 1) {
-        activeQuestion = 1; // Prevent going before the first question
+        activeQuestion = 1; 
     }
 
     const previousQuestionElement = document.getElementById(`question${activeQuestion}`);
     previousQuestionElement.classList.add('active');
     getAnswer();
 }
+// function to store the data
 
 function storeAnswer() {
     const variants = document.getElementsByName(`q${activeQuestion}`);
@@ -54,6 +66,7 @@ function storeAnswer() {
         }
     }
 }
+// Function to get the answer
 
 function getAnswer() {
     const chooseAnswer = userResponse[`q${activeQuestion}`];
@@ -64,15 +77,17 @@ function getAnswer() {
         }
     }
 }
+//Define the correct answer
 
 function calculateScore() {
     storeAnswer();
-
     const correctAnswers = {
         q1: 'west-indies',
         q2: '10',
         q3: 'newzeland',
     };
+
+// calculate the correct answer
 
     let scores = 0;
     for (const question in correctAnswers) {
@@ -80,11 +95,13 @@ function calculateScore() {
             scores++;
         }
     }
+// Display the result
 
     const resultText = `You scored ${scores} out of 3`;
     document.getElementById('result-text').textContent = resultText;
 
     // Hide questions and display result
+
     document.querySelectorAll('.question').forEach(question => {
         question.style.display = 'none';
     });
@@ -92,4 +109,5 @@ function calculateScore() {
 }
 
 // Show the first question initially
+
 document.getElementById('question1').classList.add('usernamecontainer');
