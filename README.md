@@ -18,10 +18,10 @@ This is a online quiz about Cricket. In this quiz, user  ask to set a Username t
 
 ## User Story
 
-- Enter user name 
-- Get access on 3 questions
-- get access to the next or previous steps
-- Get feedback on overall score at the end of the game.
+- Enter user name and start quiz
+- The user name will be visible at top and the first question with three possible answers will be shown visible below of the user name.
+- For the first question only the "next" button will be visible and after that one previous button for going back to previous question and one next button for going to the next question.
+- After answering three questions, the user will get the overall score.
   
 
 ## Design
