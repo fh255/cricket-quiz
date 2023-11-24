@@ -87,21 +87,23 @@ function calculateScore() {
         q3: 'newzeland',
     };
 
-// calculate the correct answer
-
     let scores = 0;
     for (const question in correctAnswers) {
         if (userResponse[question] === correctAnswers[question]) {
             scores++;
         }
     }
-// Display the result
 
     const resultText = `You scored ${scores} out of 3`;
     document.getElementById('result-text').textContent = resultText;
+    const resultImage = document.getElementById('result-image');
+    if (scores === 3) {
+        resultImage.src = 'https://github.com/fh255/cricket-quiz/blob/main/assets/images/main-image.webp'; // Path to the correct answer image
+    } else {
+        resultImage.src = 'https://github.com/fh255/cricket-quiz/blob/main/assets/images/logo.jpeg'; // Path to the incorrect answer image
+    }
 
     // Hide questions and display result
-
     document.querySelectorAll('.question').forEach(question => {
         question.style.display = 'none';
     });

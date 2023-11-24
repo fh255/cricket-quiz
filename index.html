@@ -1,83 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!--Font awesome-->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
-        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css?family=Raleway%7CRighteous" rel="stylesheet">
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+      integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Raleway%7CRighteous"
+      rel="stylesheet"
+    />
 
     <title>Cricket Quiz</title>
-    <link rel="icon" type="image/jpeg" href="assets/images/favicon.ico">
-    <link rel="stylesheet" href="assets/css/style.css">
-</head>
+    <link rel="icon" type="image/jpeg" href="assets/images/favicon.ico" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
 
-<body>
+  <body>
     <!--logo-->
     <h1 class="logo">
-        Cricket Quize
-        <img class="pic" src="assets/images/logo.jpeg" alt="logo">
+      Cricket Quize
+      <img class="pic" src="assets/images/logo.jpeg" alt="logo" />
     </h1>
 
-
     <div class="user-container active" id="usernamecontainer">
-        <form>
-            <label class="username" for="usernameInput">Choose your username:</label>
-            <input type="text" id="usernameInput" placeholder="Input your username"><br>
-            <button onclick="startQuiz()">Start Quiz</button>
-        </form>
+      <form>
+        <label class="username" for="usernameInput"
+          >Choose your username:</label
+        >
+        <input
+          type="text"
+          id="usernameInput"
+          placeholder="Input your username"
+        /><br />
+        <button onclick="startQuiz()">Start Quiz</button>
+      </form>
     </div>
 
-
     <div class="container hidden">
-        <div class="question" id="question1">
-            <h2>Question 1:</h2>
-            <p>Who won the first ever Cricket World Cup in 1975?</p>
+      <div class="question" id="question1">
+        <h2>Question 1:</h2>
+        <p>Who won the first ever Cricket World Cup in 1975?</p>
 
-            <label><input type="radio" name="q1" value="england"> England</label>
+        <label><input type="radio" name="q1" value="england" /> England</label>
 
-            <label><input type="radio" name="q1" value="india"> India</label>
+        <label><input type="radio" name="q1" value="india" /> India</label>
 
-            <label><input type="radio" name="q1" value="west-indies"> West
-                Indies</label>
+        <label
+          ><input type="radio" name="q1" value="west-indies" /> West
+          Indies</label
+        >
 
-            <button onclick="nextQuestion()">Next</button>
-        </div>
+        <button onclick="nextQuestion()">Next</button>
+      </div>
 
-        <div class="question" id="question2">
-            <h2>Question 2:</h2>
-            <p>How many ways are there of getting out?</p>
+      <div class="question" id="question2">
+        <h2>Question 2:</h2>
+        <p>How many ways are there of getting out?</p>
 
-            <label><input type="radio" name="q2" value="9"> 9</label>
-            <label><input type="radio" name="q2" value="10"> 10</label>
-            <label><input type="radio" name="q2" value="4"> 4</label>
+        <label><input type="radio" name="q2" value="9" /> 9</label>
+        <label><input type="radio" name="q2" value="10" /> 10</label>
+        <label><input type="radio" name="q2" value="4" /> 4</label>
 
-            <button onclick="previousQuestion()">Previous</button>
-            <button onclick="nextQuestion()">Next</button>
-        </div>
+        <button onclick="previousQuestion()">Previous</button>
+        <button onclick="nextQuestion()">Next</button>
+      </div>
 
-        <div class="question" id="question3">
-            <h2>Question 3:</h2>
-            <p>Who did England beat in the final of the 2019 Cricket World Cup?</p>
+      <div class="question" id="question3">
+        <h2>Question 3:</h2>
+        <p>Who did England beat in the final of the 2019 Cricket World Cup?</p>
 
-            <label><input type="radio" name="q3" value="india"> India</label>
-            <label><input type="radio" name="q3" value="newzeland"> Newzeland</label>
-            <label><input type="radio" name="q3" value="scotland"> Scotland</label>
+        <label><input type="radio" name="q3" value="india" /> India</label>
+        <label
+          ><input type="radio" name="q3" value="newzeland" /> Newzeland</label
+        >
+        <label
+          ><input type="radio" name="q3" value="scotland" /> Scotland</label
+        >
 
-            <button onclick="previousQuestion()">Previous</button>
-            <button onclick="calculateScore()">Submit</button>
-        </div>
-
-        <div id="result" style="display: none">
-            <h3>Quiz Results:</h3>
-            <p id="result-text"></p>
-        </div>
+        <button onclick="previousQuestion()">Previous</button>
+        <button onclick="calculateScore()">Submit</button>
+      </div>
+      <div id="result" style="display: none">
+        <h3>Quiz Results:</h3>
+        <p id="result-text"></p>
+        <img id="result-image" src="assets/images/main-image.webp" alt="Result Image" />
+      </div>
     </div>
 
     <script src="assets/JS/script.js"></script>
-</body>
-
+  </body>
 </html>
