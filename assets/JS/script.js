@@ -26,11 +26,11 @@ function nextQuestion() {
     const activeQuestionElement = document.getElementById(`question${activeQuestion}`);
     activeQuestionElement.classList.remove('active');
 
-// Prevent going beyond the last question
+    // Prevent going beyond the last question
 
     activeQuestion++;
     if (activeQuestion > 3) {
-        activeQuestion = 3; 
+        activeQuestion = 3;
     }
 
     const nextQuestionElement = document.getElementById(`question${activeQuestion}`);
@@ -48,7 +48,7 @@ function previousQuestion() {
 
     activeQuestion--;
     if (activeQuestion < 1) {
-        activeQuestion = 1; 
+        activeQuestion = 1;
     }
 
     const previousQuestionElement = document.getElementById(`question${activeQuestion}`);
@@ -93,15 +93,39 @@ function calculateScore() {
             scores++;
         }
     }
+    let questionNumber = 1;
+    for (const question in correctAnswers) {
+        if (userResponse[question] === correctAnswers[question]) {
+            const labelElement = document.createElement('label');
+            labelElement.innerHTML = questionNumber + userResponse[question];
+            document.getElementById("imageDiv").appendChild(labelElement);
+            var imgElement = document.createElement("img");
+            imgElement.setAttribute("src", "assets/images/correct.png");
+            document.getElementById("imageDiv").appendChild(imgElement);
+            imgElement.style.width = '100%';
+            imgElement.style.height = '100%';
+        } else {
+            const labelElement = document.createElement('label');
+            labelElement.innerHTML = questionNumber + userResponse[question];
+            document.getElementById("imageDiv").appendChild(labelElement);
+            var imgElement = document.createElement("img");
+            imgElement.setAttribute("src", "assets/images/incorrect.png");
+            document.getElementById("imageDiv").appendChild(imgElement);
+            imgElement.style.width = '100%';
+            imgElement.style.height = '100%';
+
+        }
+        questionNumber++;
+    }
 
     const resultText = `You scored ${scores} out of 3`;
     document.getElementById('result-text').textContent = resultText;
-    const resultImage = document.getElementById('result-image');
+    /*const resultImage = document.getElementById('result-image');
     if (scores === 3) {
-        resultImage.src = 'https://github.com/fh255/cricket-quiz/blob/main/assets/images/main-image.webp'; // Path to the correct answer image
+        resultImage.src = 'assets/images/correct.png'; // Path to the correct answer image
     } else {
-        resultImage.src = 'https://github.com/fh255/cricket-quiz/blob/main/assets/images/logo.jpeg'; // Path to the incorrect answer image
-    }
+        resultImage.src = 'assets/images/correct.png'; // Path to the incorrect answer image
+    }*/
 
     // Hide questions and display result
     document.querySelectorAll('.question').forEach(question => {

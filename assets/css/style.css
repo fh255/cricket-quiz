@@ -1,17 +1,20 @@
  body {
      font-family: Arial, sans-serif;
      text-align: center;
-    align-items: center;
-    justify-content: center;
+     align-items: center;
+     justify-content: center;
  }
+
  /* Logo and Hearder*/
  .logo {
      font-family: Times New Roman Georgia Garamond;
      font-size: 30px;
  }
+
  .pic {
      height: 70px;
  }
+
  form {
      display: flex;
      flex-direction: column;
@@ -19,64 +22,68 @@
  }
 
  .user-container {
-    display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        max-width: 450px;
-        padding: 20px;
-        margin: auto;
-        top:50%;
-        left: 50%;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
+     max-width: 450px;
+     padding: 20px;
+     margin: auto;
+     top: 50%;
+     left: 50%;
  }
-form {
-    display: flex;
-    flex-direction: column;
-}
-label {
-    margin-top: 10px;
-}
 
-input {
-    padding: 8px;
-    margin-bottom: 15px;
-}
+ form {
+     display: flex;
+     flex-direction: column;
+ }
+
+ label {
+     margin-top: 10px;
+ }
+
+ input {
+     padding: 8px;
+     margin-bottom: 15px;
+ }
+
  .username {
      padding: 20px;
  }
- .hidden{
-    display: none;
+
+ .hidden {
+     display: none;
  }
 
- 
+
 
  .container {
-    text-align: center;
-    width: 370px;
+     text-align: center;
+     width: 370px;
      padding: 20px;
-     margin: auto ;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+     margin: auto;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
  }
 
-.question {
-    display: none;
-}
+ .question {
+     display: none;
+ }
 
-.active {
-    display: block;
-}
+ .active {
+     display: block;
+ }
 
-label {
-    display: flex;
-    
-    
-}
- 
+ label {
+     display: flex;
+
+
+ }
+
  button {
-     
+
      padding: 8px;
      font-size: 20px;
      cursor: pointer;
@@ -85,4 +92,8 @@ label {
      border-radius: 5px;
  }
 
- 
+ #imageDiv {
+     height: 20px;
+     width: 20px;
+     border-radius: 50%;
+ }
