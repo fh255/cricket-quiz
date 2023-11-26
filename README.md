@@ -59,6 +59,11 @@ This is an online quiz about Cricket. In this quiz, the user is asked to set a u
 - The feedback is shown in the Quiz Result.
 <img width="526" alt="results" src="https://github.com/fh255/cricket-quiz/assets/34744096/e0b8dbc5-d2a5-4a3a-983d-7446ea5c4565">
 
+### Feedback Images
+- The user recives feedback as image for correct and incorrect answer.
+  <img width="310" alt="Correct and incorrect answer" src="https://github.com/fh255/cricket-quiz/assets/34744096/f4878e8c-8234-43f0-985e-77f3651b7f6a">
+
+
 ## Technology Used
 ### Language used
 - HTML
