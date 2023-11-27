@@ -1,98 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!--Font awesome-->
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
-      integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
-      crossorigin="anonymous"
-    />
-    <link
-      href="https://fonts.googleapis.com/css?family=Raleway%7CRighteous"
-      rel="stylesheet"
-    />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+   <!--Link to Google Font-->
+    <link href="https://fonts.googleapis.com/css?family=Raleway%7CRighteous" rel="stylesheet">
 
     <title>Cricket Quiz</title>
-    <link rel="icon" type="image/jpeg" href="assets/images/favicon.ico" />
-    <link rel="stylesheet" href="assets/css/style.css" />
+    <!--Favicon image-->
+    <link rel="icon" type="image/jpeg" href="assets/images/favicon.ico">
+    <!--Link to css file-->
+    <link rel="stylesheet" href="assets/css/style.css">
   </head>
 
   <body>
-    <!--logo-->
+    <!-- Header with logo -->
     <h1 class="logo">
+        <!-- Link to the home page -->
       <a href="index.html">Cricket Quize</a>
-      <img class="pic" src="assets/images/logo.jpeg" alt="logo" />
+      <!-- Logo image -->
+      <img class="pic" src="assets/images/logo.jpeg" alt="logo">
     </h1>
 
     <div class="user-container active" id="usernamecontainer">
+         <!-- User input form -->
       <form>
-        <label class="username" for="usernameInput"
-          >Choose your username:</label
-        >
-        <input
-          type="text"
-          id="usernameInput"
-          placeholder="Input your username"
-        /><br />
+         <!-- Label and input for the username input field -->
+        <label class="username" for="usernameInput">Choose your username:</label>
+        <input type="text" id="usernameInput" placeholder="Input your username" ><br >
+        <!-- Button to start the quiz, with an onclick event calling the "startQuiz" function -->
         <button onclick="startQuiz()">Start Quiz</button>
       </form>
     </div>
-
+<!-- Container with the "container" class and "hidden" class -->
     <div class="container hidden">
+        <!-- Question 1 section with ID "question1" -->
       <div class="question" id="question1">
         <h2>Question 1:</h2>
         <p>Who won the first ever Cricket World Cup in 1975?</p>
-
-        <label><input type="radio" name="q1" value="england" /> England</label>
-
-        <label><input type="radio" name="q1" value="india" /> India</label>
-
-        <label
-          ><input type="radio" name="q1" value="west-indies" /> West
-          Indies</label
-        >
-
+        <label><input type="radio" name="q1" value="england" > England</label>
+        <label><input type="radio" name="q1" value="india" > India</label>
+        <label><input type="radio" name="q1" value="west-indies" > West Indies</label>
+         <!-- Button to move to the next question, with an onclick event calling the "nextQuestion" function -->
         <button onclick="nextQuestion()">Next</button>
       </div>
-
+ <!-- Question 2 section with ID "question1" -->
       <div class="question" id="question2">
         <h2>Question 2:</h2>
         <p>How many ways are there of getting out?</p>
 
-        <label><input type="radio" name="q2" value="9" /> 9</label>
-        <label><input type="radio" name="q2" value="10" /> 10</label>
-        <label><input type="radio" name="q2" value="4" /> 4</label>
-
+        <label><input type="radio" name="q2" value="9" > 9</label>
+        <label><input type="radio" name="q2" value="10" > 10</label>
+        <label><input type="radio" name="q2" value="4" > 4</label>
+<!-- Button to move to the previous question, with an onclick event calling the "nextQuestion" function -->
         <button onclick="previousQuestion()">Previous</button>
+        <!-- Button to move to the next question, with an onclick event calling the "nextQuestion" function -->
         <button onclick="nextQuestion()">Next</button>
       </div>
-
+ <!-- Question 3 section with ID "question1" -->
       <div class="question" id="question3">
         <h2>Question 3:</h2>
         <p>Who did England beat in the final of the 2019 Cricket World Cup?</p>
 
-        <label><input type="radio" name="q3" value="India" /> India</label>
-        <label
-          ><input type="radio" name="q3" value="newzeland" /> Newzeland</label
-        >
-        <label
-          ><input type="radio" name="q3" value="scotland" /> Scotland</label
-        >
-
+        <label><input type="radio" name="q3" value="India" > India</label>
+        <label><input type="radio" name="q3" value="newzeland" > Newzeland</label>
+        <label><input type="radio" name="q3" value="scotland" > Scotland</label>
+<!-- Button to move to the next question, with an onclick event calling the "nextQuestion" function -->
         <button onclick="previousQuestion()">Previous</button>
+        <!-- Button to submit and calculate the quiz score, with an onclick event calling the "calculateScore" function -->
         <button onclick="calculateScore()">Submit</button>
       </div>
+      <!-- Container for quiz results with ID "result" and initial style set to "display: none" -->
       <div id="result" style="display: none">
+        <!-- Heading for quiz results -->
         <h3>Quiz Results:</h3>
+        <!-- Paragraph for displaying the result text, with ID "result-text" -->
         <p id="result-text"></p>
+        <!-- Button to start the quiz again, with an onclick event calling the "startAgain" function -->
+    <button onclick="startAgain()">Start Again</button>
+</div>
       </div>
+      <!-- Container for an image with ID "imageDiv" which is call in js -->
       <div id="imageDiv"></div>
     </div>
 
-    <script src="assets/JS/script.js"></script>
+<!--Link to js file-->
+    <script src="assets/js/script.js"></script>
   </body>
 </html>

@@ -1,5 +1,7 @@
- body {
-     font-family: Arial, sans-serif;
+ 
+
+body {
+     font-family : Arial, sans-serif;
      text-align: center;
      align-items: center;
      justify-content: center;
@@ -7,9 +9,10 @@
 
  /* Logo and Hearder*/
  .logo {
-     font-family: Times New Roman Georgia Garamond;
-     font-size: 30px;
- }
+font-family : "Times New Roman Georgia Garamond";
+font-size : 30px;
+style: none;
+}
 
  .pic {
      height: 70px;
@@ -95,6 +98,6 @@
  #imageDiv {
      height: 20px;
      width: 20px;
-     display: flexbox;
+     display: flex;
 
  }
