@@ -1,103 +1,102 @@
- 
-
 body {
-     font-family : Arial, sans-serif;
-     text-align: center;
-     align-items: center;
-     justify-content: center;
- }
-
- /* Logo and Hearder*/
- .logo {
-font-family : "Times New Roman Georgia Garamond";
-font-size : 30px;
-style: none;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
 }
 
- .pic {
-     height: 70px;
- }
+/* Logo and Hearder*/
+.logo {
+    font-family: "Times New Roman", Georgia, Garamond, sans-serif;
+    font-size: 30px;
+}
 
- form {
-     display: flex;
-     flex-direction: column;
-     align-items: center;
- }
+.pic {
+    height: 70px;
+}
 
- .user-container {
-     display: flex;
-     flex-direction: column;
-     align-items: center;
-     justify-content: center;
-     max-width: 450px;
-     padding: 20px;
-     margin: auto;
-     top: 50%;
-     left: 50%;
- }
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
- form {
-     display: flex;
-     flex-direction: column;
- }
+.user-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 450px;
+    padding: 20px;
+    margin: auto;
+    top: 50%;
+    left: 50%;
+}
 
- label {
-     margin-top: 10px;
- }
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
- input {
-     padding: 8px;
-     margin-bottom: 15px;
- }
+label {
+    margin-top: 10px;
+}
 
- .username {
-     padding: 20px;
- }
+input {
+    padding: 8px;
+    margin-bottom: 15px;
+}
 
- .hidden {
-     display: none;
- }
+.username {
+    padding: 20px;
+}
 
-
-
- .container {
-     text-align: center;
-     width: 370px;
-     padding: 20px;
-     margin: auto;
-     display: flex;
-     flex-direction: column;
-     align-items: center;
-     justify-content: center;
- }
-
- .question {
-     display: none;
- }
-
- .active {
-     display: block;
- }
-
- label {
-     display: flex;
+.hidden {
+    display: none;
+}
 
 
- }
 
- button {
+.container {
+    width: 370px;
+    padding: 20px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
 
-     padding: 8px;
-     font-size: 20px;
-     cursor: pointer;
-     background-color: #5ca5ef;
-     color: #fff;
-     border-radius: 5px;
- }
+.question {
+    display: none;
+}
 
- #imageDiv {
-     height: 20px;
-     width: 20px;
-     display: flex;
+.active {
+    display: block;
+}
 
- }
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+label{
+    display: flex;
+}
+button {
+
+    padding: 8px;
+    font-size: 20px;
+    cursor: pointer;
+    background-color: #5ca5ef;
+    color: #fff;
+    border-radius: 5px;
+}
+
+#imageDiv {
+    height: 20px;
+    width: 20px;
+    display: flex;
+    flex-direction: column;
+}
