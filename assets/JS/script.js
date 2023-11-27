@@ -90,22 +90,18 @@ function getAnswer() {
 function calculateScore() {
     storeAnswer();
     const correctAnswers = {
-        q1: "West-indies",
+        q1: "west-indies",
         q2: "10",
-        q3: "Newzeland",
+        q3: "newzeland",
     };
 
     let scores = 0;
-    for (const question in correctAnswers) {
-        if (userResponse[question] === correctAnswers[question]) {
-            scores++;
-        }
-    }
     let questionNumber = 1;
     for (const question in correctAnswers) {
         if (userResponse[question] === correctAnswers[question]) {
+            scores++;
             const labelElement = document.createElement("label");
-            labelElement.innerHTML = questionNumber + " " + userResponse[question];
+            labelElement.innerHTML = questionNumber + userResponse[question];
             //document.getElementById("imageDiv").appendChild(labelElement);
             var imgElement = document.createElement("img");
             imgElement.setAttribute("src", "assets/images/correct.png");
