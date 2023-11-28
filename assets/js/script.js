@@ -3,14 +3,14 @@
 // Vriable to hold the questions and user's Answer
 
 let activeQuestion = 1;
-var username = "Guest";
+let username = "Guest";
 const userResponse = {};
 
 // Define the start quiz function
 
 function startQuiz() {
     let usernameInput = document.getElementById("usernameInput");
-    if (usernameInput.value != null) {
+    if (usernameInput.value !== null && usernameInput.value.trim() !== "") {
         username = usernameInput.value;
     }
 
@@ -108,16 +108,20 @@ function calculateScore() {
         if (correctAnswers.hasOwnProperty(question)) {
             const imgElement = document.createElement("img");
             const labelElement = document.createElement("label");
-            labelElement.innerHTML = `${questionNumber}${userResponse[question]}`;
+            labelElement.innerHTML = `Question-${questionNumber}: ${userResponse[question]}`;
 
             imgElement.setAttribute(
                 "src",
                 userResponse[question] === correctAnswers[question] ? "assets/images/correct.png"
                     : "assets/images/incorrect.png"
             );
+            labelElement.style.width = "90%";
+            labelElement.style.height = "100%";
 
-            imgElement.style.width = "100%";
+            imgElement.style.width = "10%";
             imgElement.style.height = "100%";
+
+            
 
             const containerDiv = document.createElement("div");
             containerDiv.style.display = "flex";
@@ -127,6 +131,7 @@ function calculateScore() {
             containerDiv.appendChild(imgElement);
 
             document.getElementById("imageDiv").appendChild(containerDiv);
+
 
             if (userResponse[question] === correctAnswers[question]) {
                 scores++;

@@ -95,8 +95,8 @@ button {
 }
 
 #imageDiv {
-    height: 20px;
-    width: 20px;
+    height: 10px;
+    width: 200px;
     display: flex;
     flex-direction: column;
 }
