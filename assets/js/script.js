@@ -3,24 +3,15 @@
 // Vriable to hold the questions and user's Answer
 
 let activeQuestion = 1;
-<<<<<<< HEAD
-var username = "Guest";
-=======
 let username = "Guest";
->>>>>>> 491118151c18852997cda9db254725f8a467b6b5
-const userResponse = {};
+let userResponse = {};
 
 // Define the start quiz function
 
 function startQuiz() {
     let usernameInput = document.getElementById("usernameInput");
-<<<<<<< HEAD
-    if (usernameInput != null) {
-        let username = usernameInput.value;
-=======
     if (usernameInput.value !== null && usernameInput.value.trim() !== "") {
         username = usernameInput.value;
->>>>>>> 491118151c18852997cda9db254725f8a467b6b5
     }
 
 
@@ -117,23 +108,13 @@ function calculateScore() {
         if (correctAnswers.hasOwnProperty(question)) {
             const imgElement = document.createElement("img");
             const labelElement = document.createElement("label");
-<<<<<<< HEAD
-            labelElement.innerHTML = `${questionNumber}${userResponse[question]}`;
-=======
             labelElement.innerHTML = `Question-${questionNumber}: ${userResponse[question]}`;
->>>>>>> 491118151c18852997cda9db254725f8a467b6b5
 
             imgElement.setAttribute(
                 "src",
                 userResponse[question] === correctAnswers[question] ? "assets/images/correct.png"
                     : "assets/images/incorrect.png"
             );
-<<<<<<< HEAD
-
-            imgElement.style.width = "100%";
-            imgElement.style.height = "100%";
-
-=======
             labelElement.style.width = "90%";
             labelElement.style.height = "100%";
 
@@ -142,7 +123,6 @@ function calculateScore() {
 
             
 
->>>>>>> 491118151c18852997cda9db254725f8a467b6b5
             const containerDiv = document.createElement("div");
             containerDiv.style.display = "flex";
             containerDiv.style.alignItems = "center";
@@ -152,10 +132,7 @@ function calculateScore() {
 
             document.getElementById("imageDiv").appendChild(containerDiv);
 
-<<<<<<< HEAD
-=======
 
->>>>>>> 491118151c18852997cda9db254725f8a467b6b5
             if (userResponse[question] === correctAnswers[question]) {
                 scores++;
             }
@@ -173,9 +150,15 @@ function calculateScore() {
 
     document.getElementById("result").style.display = "block";
 }
+function startAgain() {
+    // Reset active question, user responses, and hide the result container
+    activeQuestion = 1;
+    userResponse = {};
+    //Navigation to a html page
+    window.location.href = 'index.html';
 
+}
 
 // Show the first question initially
 
 document.getElementById("question1").classList.add("usernamecontainer");
-
