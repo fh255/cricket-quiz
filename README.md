@@ -87,6 +87,8 @@ This interactive online Cricket Quiz prompts users to set a username before divi
 - [Google Fonts](https://fonts.google.com/): Used to import Arial and Times New Roman.
 - [GitHub](https://github.com/dashboard) : Used to control the Gitpod terminal, commit to Git, and push to GitHub.
 
+### Responsive
+
 ## Deployment
 - Go to GitHub, then select "Settings" from the right-side navigation.
 - Select "Pages" from the left side.
