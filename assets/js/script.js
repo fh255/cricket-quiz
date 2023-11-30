@@ -122,7 +122,10 @@ function calculateScore() {
             imgElement.style.height = "100%";
 
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 3845a9c92be3b6ad67b154ebf3f27a8431c69514
             const containerDiv = document.createElement("div");
             containerDiv.style.display = "flex";
             containerDiv.style.alignItems = "center";
