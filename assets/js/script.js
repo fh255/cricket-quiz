@@ -100,7 +100,6 @@ function calculateScore() {
         q2: "10",
         q3: "newzeland",
     };
-
     let scores = 0;
     let questionNumber = 1;
 
