@@ -85,7 +85,7 @@ This interactive online Cricket Quiz prompts users to set a username before divi
   <img width="1124" alt="accessibility" src="https://github.com/fh255/cricket-quiz/assets/34744096/6a96ef85-270a-4a07-8792-5d0ba57a3d2a">
 
 ### Frameworks & Libraries
-- [Google Fonts](https://fonts.google.com/): Used to import Arial and Times New Roman.
+- [Google Fonts](https://fonts.google.com/): Used to import Hedvig Letters Serif.
 - [GitHub](https://github.com/dashboard) : Utilized for managing the Gitpod terminal, executing Git commits, and pushing changes to GitHub.
 
 ### Responsive
