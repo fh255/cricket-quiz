@@ -1,31 +1,20 @@
-<<<<<<< HEAD
- body {
-     font-family: Arial, sans-serif;
-     text-align: center;
-     align-items: center;
-     justify-content: center;
- }
-
- /* Logo and Hearder*/
- .logo {
-     font-family: "Times New Roman", Georgia, Garamond, sans-serif;
-     font-size: 30px;
- }
-=======
+  @import url('https://fonts.googleapis.com/css2?family=Hedvig+Letters+Serif:opsz@12..24&display=swap');
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Hedvig Letters Serif', serif;
     text-align: center;
     align-items: center;
     justify-content: center;
 }
->>>>>>> 491118151c18852997cda9db254725f8a467b6b5
 
 /* Logo and Hearder*/
 .logo {
-    font-family: "Times New Roman", Georgia, Garamond, sans-serif;
+    
     font-size: 30px;
 }
-
+a{
+    text-decoration: none;
+    color: inherit;
+}
 .pic {
     height: 70px;
 }
@@ -36,13 +25,6 @@ form {
     align-items: center;
 }
 
-<<<<<<< HEAD
- form {
-     display: flex;
-     flex-direction: column;
-     align-items: center;
- }
-=======
 .user-container {
     display: flex;
     flex-direction: column;
@@ -54,17 +36,7 @@ form {
     top: 50%;
     left: 50%;
 }
->>>>>>> 491118151c18852997cda9db254725f8a467b6b5
 
-form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-label {
-    margin-top: 10px;
-}
 
 input {
     padding: 8px;
@@ -106,9 +78,10 @@ form {
 }
 label{
     display: flex;
+    margin-top: 10px;
 }
-button {
 
+button {
     padding: 8px;
     font-size: 20px;
     cursor: pointer;
@@ -116,30 +89,13 @@ button {
     color: #fff;
     border-radius: 5px;
 }
+.result{
+    height: 300px;
+}
 
-<<<<<<< HEAD
- }
-
- button {
-
-     padding: 8px;
-     font-size: 20px;
-     cursor: pointer;
-     background-color: #5ca5ef;
-     color: #fff;
-     border-radius: 5px;
- }
-
- #imageDiv {
-     height: 20px;
-     width: 20px;
-     display: flex;
- }
-=======
 #imageDiv {
-    height: 10px;
+    height: 120px;
     width: 200px;
     display: flex;
     flex-direction: column;
 }
->>>>>>> 491118151c18852997cda9db254725f8a467b6b5

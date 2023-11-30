@@ -121,7 +121,7 @@ function calculateScore() {
             imgElement.style.width = "10%";
             imgElement.style.height = "100%";
 
-            
+
 
             const containerDiv = document.createElement("div");
             containerDiv.style.display = "flex";
