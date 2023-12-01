@@ -54,7 +54,8 @@ input {
 
 
 .container {
-    width: 370px;
+    max-width: 370px;
+    width: 100%;
     padding: 20px;
     margin: auto;
     display: flex;
@@ -90,11 +91,11 @@ button {
     border-radius: 5px;
 }
 .result{
-    height: 300px;
+    height: 350px;
 }
 
 #imageDiv {
-    height: 120px;
+    height: 280px;
     width: 200px;
     display: flex;
     flex-direction: column;
