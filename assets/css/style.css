@@ -1,102 +1,102 @@
   @import url('https://fonts.googleapis.com/css2?family=Hedvig+Letters+Serif:opsz@12..24&display=swap');
-body {
-    font-family: 'Hedvig Letters Serif', serif;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
-}
+  body {
+      font - family: 'Hedvig Letters Serif', serif;
+      text - align: center;
+      align - items: center;
+      justify - content: center;
+  }
 
-/* Logo and Hearder*/
-.logo {
-    
-    font-size: 30px;
-}
-a{
-    text-decoration: none;
-    color: inherit;
-}
-.pic {
-    height: 70px;
-}
+  /* Logo and Hearder*/
+  .logo {
 
-form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
+      font - size: 30 px;
+  }
+  a {
+      text - decoration: none;
+      color: inherit;
+  }
+  .pic {
+      height: 70 px;
+  }
 
-.user-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    max-width: 450px;
-    padding: 20px;
-    margin: auto;
-    top: 50%;
-    left: 50%;
-}
+  form {
+      display: flex;
+      flex - direction: column;
+      align - items: center;
+  }
 
-
-input {
-    padding: 8px;
-    margin-bottom: 15px;
-}
-
-.username {
-    padding: 20px;
-}
-
-.hidden {
-    display: none;
-}
+  .user - container {
+      display: flex;
+      flex - direction: column;
+      align - items: center;
+      justify - content: center;
+      max - width: 450 px;
+      padding: 20 px;
+      margin: auto;
+      top: 50 % ;
+      left: 50 % ;
+  }
 
 
+  input {
+      padding: 8 px;
+      margin - bottom: 15 px;
+  }
 
-.container {
-    max-width: 370px;
-    width: 100%;
-    padding: 20px;
-    margin: auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
+  .username {
+      padding: 20 px;
+  }
 
-.question {
-    display: none;
-}
+  .hidden {
+      display: none;
+  }
 
-.active {
-    display: block;
-}
 
-form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-label{
-    display: flex;
-    margin-top: 10px;
-}
 
-button {
-    padding: 8px;
-    font-size: 20px;
-    cursor: pointer;
-    background-color: #5ca5ef;
-    color: #fff;
-    border-radius: 5px;
-}
-.result{
-    height: 350px;
-}
+  .container {
+      max - width: 370 px;
+      width: 100 % ;
+      padding: 20 px;
+      margin: auto;
+      display: flex;
+      flex - direction: column;
+      align - items: center;
+      justify - content: center;
+  }
 
-#imageDiv {
-    height: 280px;
-    width: 200px;
-    display: flex;
-    flex-direction: column;
-}
+  .question {
+      display: none;
+  }
+
+  .active {
+      display: block;
+  }
+
+  form {
+      display: flex;
+      flex - direction: column;
+      align - items: center;
+  }
+  label {
+      display: flex;
+      margin - top: 10 px;
+  }
+
+  button {
+      padding: 8 px;
+      font - size: 20 px;
+      cursor: pointer;
+      background - color: #5ca5ef;
+      color: # fff;
+      border - radius: 5 px;
+  }
+  .result {
+      height: 350 px;
+  }
+
+  #imageDiv {
+      height: 280 px;
+      width: 200 px;
+      display: flex;
+      flex - direction: column;
+  }
