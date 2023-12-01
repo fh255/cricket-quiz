@@ -38,8 +38,8 @@ function nextQuestion() {
 
     // Prevent going beyond the last question
     activeQuestion++;
-    if (activeQuestion > 3) {
-        activeQuestion = 3;
+    if (activeQuestion > 8) {
+        activeQuestion = 8;
     }
 
     // Activate the next question
@@ -98,6 +98,11 @@ function calculateScore() {
         q1: "west-indies",
         q2: "10",
         q3: "newzeland",
+        q4: "australia",
+        q5: "england",
+        q6: "umpire",
+        q7: "east-africa",
+        q8: "bails",
     };
 
     let scores = 0;
