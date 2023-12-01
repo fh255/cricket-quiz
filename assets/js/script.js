@@ -119,8 +119,8 @@ function calculateScore() {
             //Set the appropiate image correct/wrong, according to the user given answer
             imgElement.setAttribute(
                 "src",
-                userResponse[question] === correctAnswers[question] ? "assets/images/correct.png" :
-                "assets/images/incorrect.png"
+                userResponse[question] === correctAnswers[question] ? "assets/images/correct.png"
+                    : "assets/images/incorrect.png"
             );
 
             // Style the elements for imageDiv
