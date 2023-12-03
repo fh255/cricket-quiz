@@ -75,8 +75,6 @@ This interactive online Cricket Quiz prompts users to set a username before divi
 - JavaScript (JS)
   <img width="1270" alt="Screenshot 2023-12-03 at 16 48 13" src="https://github.com/fh255/cricket-quiz/assets/34744096/550b9632-e6b0-49f6-9a87-66d6e989d1be">
 
-- The functions startQuiz, nextQuestion, previousQuestion, calculateScore, and startAgain were invoked from the HTML.
-
 - Accessibility
   <img width="1124" alt="accessibility" src="https://github.com/fh255/cricket-quiz/assets/34744096/6a96ef85-270a-4a07-8792-5d0ba57a3d2a">
 
