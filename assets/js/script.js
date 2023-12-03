@@ -9,6 +9,8 @@ let activeQuestion = 1;
 let username = "Guest";
 let userResponse = {};
 
+const startQuizButton = document.getElementById("start-quiz-button");
+startQuizButton.addEventListener('click', startQuiz);
 // Define the start quiz function
 function startQuiz() {
     // Get the username input element
@@ -29,7 +31,9 @@ function startQuiz() {
 }
 
 // Load the next question and store the data
-function nextQuestion() {
+const nextQuestionButtons = document.querySelectorAll(".next-question-button");
+// Define a common event listener function
+function handleNextButtonClick(event) {
     storeAnswer();
 
     // Deactivate the current question
@@ -48,8 +52,15 @@ function nextQuestion() {
     getAnswer();
 }
 
-// Load the previous question and store the data
-function previousQuestion() {
+// Attach the event listener to all elements with the class "question-button"
+nextQuestionButtons.forEach(button => {
+    button.addEventListener('click', handleNextButtonClick);
+});
+
+//Load the previous question and store the data
+const previousQuestionButtons = document.querySelectorAll(".previous-question-button");
+
+function handlePreviousQuestionButtonClick(event) {
     storeAnswer();
 
     // Deactivate the current question
@@ -67,6 +78,12 @@ function previousQuestion() {
     previousQuestionElement.classList.add("active");
     getAnswer();
 }
+
+// Attach the event listener to all elements with the class "question-button"
+previousQuestionButtons.forEach(button => {
+    button.addEventListener('click', handlePreviousQuestionButtonClick);
+});
+
 
 // Function to store the user's answer
 function storeAnswer() {
@@ -89,7 +106,8 @@ function getAnswer() {
         }
     }
 }
-
+const calculateScoreButton = document.getElementById("calculate-score-button");
+calculateScoreButton.addEventListener('click', calculateScore);
 // Define the correct answers
 function calculateScore() {
     storeAnswer();
@@ -113,14 +131,18 @@ function calculateScore() {
         if (correctAnswers.hasOwnProperty(question)) {
             const imgElement = document.createElement("img");
             const labelElement = document.createElement("label");
-
-            // Display user's anwered questions and relevent correct/wrong answer.
-            labelElement.innerHTML = `Question-${questionNumber}: ${userResponse[question]}`;
+            if (typeof userResponse[question] === 'undefined') {
+                // Display user's anwered questions and relevent correct/wrong answer.
+                labelElement.innerHTML = `Question-${questionNumber}: Answer not provided`;
+            } else {
+                // Display user's anwered questions and relevent correct/wrong answer.
+                labelElement.innerHTML = `Question-${questionNumber}: ${userResponse[question]}`;
+            }
             //Set the appropiate image correct/wrong, according to the user given answer
             imgElement.setAttribute(
                 "src",
-                userResponse[question] === correctAnswers[question] ? "assets/images/correct.png"
-                    : "assets/images/incorrect.png"
+                userResponse[question] === correctAnswers[question] ? "assets/images/correct.png" :
+                "assets/images/incorrect.png"
             );
 
             // Style the elements for imageDiv
@@ -162,6 +184,9 @@ function calculateScore() {
 }
 
 // Function to reset the quiz and start again
+const startAgainButton = document.getElementById("start-again-button");
+startAgainButton.addEventListener('click', startAgain);
+
 function startAgain() {
     // Reset active question, user responses, and hide the result container
     activeQuestion = 1;
