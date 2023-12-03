@@ -73,7 +73,8 @@ This interactive online Cricket Quiz prompts users to set a username before divi
 - CSS
   <img width="1267" alt="CSS validator" src="https://github.com/fh255/cricket-quiz/assets/34744096/27557da5-5059-4883-9f6f-bb60bd38b9ea">
 - JavaScript (JS)
-  <img width="1265" alt="js validator" src="https://github.com/fh255/cricket-quiz/assets/34744096/642279cf-a239-4926-9581-36880dfeec3a">
+  <img width="1270" alt="Screenshot 2023-12-03 at 16 48 13" src="https://github.com/fh255/cricket-quiz/assets/34744096/550b9632-e6b0-49f6-9a87-66d6e989d1be">
+
 - The functions startQuiz, nextQuestion, previousQuestion, calculateScore, and startAgain were invoked from the HTML.
 
 - Accessibility
