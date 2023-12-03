@@ -56,20 +56,15 @@ This interactive online Cricket Quiz prompts users to set a username before divi
 - Upon completing the quiz, users submit their answers to receive feedback.
   <img width="391" alt="submit" src="https://github.com/fh255/cricket-quiz/assets/34744096/73b91db9-f662-41b9-8040-3643a44aa341">
 
-
 ### Feedback
 - Users receive feedback regarding their quiz performance, which is displayed in the Quiz Results section.
   <img width="526" alt="results" src="https://github.com/fh255/cricket-quiz/assets/34744096/e0b8dbc5-d2a5-4a3a-983d-7446ea5c4565">
 
 ### Feedback Images
 - Users receive feedback in the form of images indicating correct and incorrect answers.
+- - Users have the option to restart the quiz by utilizing the "Start Again" button, which redirecting them to the initial page of the quiz.
+
   <img width="359" alt="feedbac-image" src="https://github.com/fh255/cricket-quiz/assets/34744096/aaa2e439-4052-44bc-a8aa-2076ad5047b1">
-
-
-### Start Again
-- Users have the option to restart the quiz by utilizing the "Start Again" button, which redirecting them to the initial page of the quiz.
-
-        <img width="327" alt="Screenshot 2023-11-29 at 12 56 53" src="https://github.com/fh255/cricket-quiz/assets/34744096/524258bd-1dcf-4254-a86e-a13a3466865a">
 
 ## Technology Used
 ### Language used
@@ -91,10 +86,9 @@ This interactive online Cricket Quiz prompts users to set a username before divi
 ### Responsive
 - The quiz is crafted to be compatible with various screen sizes; hence, no media queries were employed.
 ## Deployment
-- Navigate to GitHub, then click on "Settings" in the right-side navigation.
-- "Pages" from the left side. In the source section drop-down menu, opt for the Main Branch.
-- After selecting the Main branch, the page will refresh automatically, displaying a detailed ribbon to signify a successful deployment.
-  [The page link](https://fh255.github.io/cricket-quiz/)
+The website is hosted through GitHub Pages, with deployment directly from the master branch. Any new commits to the master branch trigger an automatic update to the deployed site. It's essential to name the landing page index.html for proper deployment on GitHub Pages.
+
+For local execution, you can clone this repository into your preferred editor by entering git clone https://github.com/fh255/cricket-quiz.git in your terminal.
 
 ## Credits
 - I acquired knowledge of CSS and JS codes from diverse sources such as W3Schools, MDN Web Docs, and TutorialsPoint.
