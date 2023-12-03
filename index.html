@@ -22,7 +22,7 @@
       <form>
         <label class="username" for="usernameInput" >Choose your username:</label >
            <input type="text" id="usernameInput"  placeholder="Input your username"><br>
-        <button onclick="startQuiz()">Start Quiz</button>
+        <button id="start-quiz-button">Start Quiz</button>
       </form>
     </div>
 
@@ -35,7 +35,7 @@
         <label><input type="radio" name="q1" value="india"> India</label>
 
         <label><input type="radio" name="q1" value="west-indies"> West Indies</label>
-      <button onclick="nextQuestion()">Next</button>
+      <button class="next-question-button">Next</button>
       </div>
 
       <div class="question" id="question2">
@@ -46,8 +46,8 @@
         <label><input type="radio" name="q2" value="10" > 10</label>
         <label><input type="radio" name="q2" value="4" > 4</label>
 
-        <button onclick="previousQuestion()">Previous</button>
-        <button onclick="nextQuestion()">Next</button>
+        <button class="previous-question-button">Previous</button>
+        <button class="next-question-button">Next</button>
       </div>
 
       <div class="question" id="question3">
@@ -58,8 +58,8 @@
         <label><input type="radio" name="q3" value="newzeland"> Newzeland</label>
         <label><input type="radio" name="q3" value="scotland"> Scotland</label>
 
-        <button onclick="previousQuestion()">Previous</button>
-        <button onclick="nextQuestion()">Next</button>
+        <button class="previous-question-button">Previous</button>
+        <button class="next-question-button">Next</button>
         
       </div>
       <div class="question" id="question4">
@@ -70,8 +70,8 @@
         <label><input type="radio" name="q4" value="england" > England</label>
         <label><input type="radio" name="q4" value="newzeland" > Newzeland</label>
 
-        <button onclick="previousQuestion()">Previous</button>
-        <button onclick="nextQuestion()">Next</button>
+        <button class="previous-question-button">Previous</button>
+        <button class="next-question-button">Next</button>
       </div>
 
       <div class="question" id="question5">
@@ -82,8 +82,8 @@
         <label><input type="radio" name="q5" value="india" > India</label>
         <label><input type="radio" name="q5" value="srilanka" > Srilanka</label>
 
-        <button onclick="previousQuestion()">Previous</button>
-        <button onclick="nextQuestion()">Next</button>
+        <button class="previous-question-button">Previous</button>
+        <button class="next-question-button">Next</button>
       </div>
 
       <div class="question" id="question6">
@@ -94,8 +94,8 @@
         <label><input type="radio" name="q6" value="batsman" > Batsman</label>
         <label><input type="radio" name="q6" value="boller" > Boller</label>
 
-        <button onclick="previousQuestion()">Previous</button>
-        <button onclick="nextQuestion()">Next</button>
+        <button class="previous-question-button">Previous</button>
+        <button class="next-question-button">Next</button>
       </div>
 
       <div class="question" id="question7">
@@ -106,8 +106,8 @@
         <label><input type="radio" name="q7" value="east-africa" > East Africa</label>
         <label><input type="radio" name="q7" value="srilanka" > Srilanka</label>
 
-        <button onclick="previousQuestion()">Previous</button>
-        <button onclick="nextQuestion()">Next</button>
+        <button class="previous-question-button">Previous</button>
+        <button class="next-question-button">Next</button>
       </div>
 
       <div class="question" id="question8">
@@ -118,8 +118,8 @@
         <label><input type="radio" name="q8" value="sticks"> Sticks</label>
         <label><input type="radio" name="q8" value="ball"> Ball</label>
 
-        <button onclick="previousQuestion()">Previous</button>
-        <button onclick="calculateScore()">Submit</button>
+        <button class="previous-question-button">Previous</button>
+        <button id="calculate-score-button">Submit</button>
         
       </div>
       <!-- Result section with imageDiv and Start Again button -->
@@ -128,9 +128,8 @@
         <p id="result-text"></p>
         <div id="imageDiv"></div>
         <!-- Button to start the quiz again, with an onclick event calling the "startAgain" function -->
-        <button onclick="startAgain()">Start Again</button>
-      </div>
-      
+        <button id="start-again-button">Start Again</button>
+      </div>   
     </div>
 
     <script src="assets/js/script.js"></script>
