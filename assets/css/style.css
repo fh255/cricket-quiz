@@ -1,5 +1,9 @@
   @import url('https://fonts.googleapis.com/css2?family=Hedvig+Letters+Serif:opsz@12..24&display=swap');
-body {
+*{
+    box-sizing: border-box;
+}
+
+  body {
     font-family: 'Hedvig Letters Serif', serif;
     text-align: center;
     align-items: center;
@@ -54,7 +58,7 @@ input {
 
 
 .container {
-    max-width: 370px;
+    max-width: 320px;
     width: 100%;
     padding: 20px;
     margin: auto;
@@ -95,7 +99,7 @@ button {
 }
 
 #imageDiv {
-    height: 280px;
+    height: 480px;
     width: 200px;
     display: flex;
     flex-direction: column;
